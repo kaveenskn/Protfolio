@@ -1,0 +1,27 @@
+/* Navbar.css */
+
+.navbar-link {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+/* The underline */
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #15d8fb; /* cyan-400 */
+  transition: all 0.5s ease;
+  transform: translateX(-50%);
+}
+
+/* On hover, underline expands from center */
+.navbar-link:hover::after {
+  width: 100%;
+ 
+  
+}
