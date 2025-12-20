@@ -9,13 +9,17 @@ import Projects from './Projects';
 import Contact from './Contact';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme === 'light' || savedTheme === 'dark' ? savedTheme : 'dark';
+  });
 
   useEffect(() => {
     document.documentElement.classList.remove('dark');
     if (theme === 'dark') {
       document.documentElement.classList.add('dark');
     }
+    localStorage.setItem('theme', theme);
   }, [theme]);
 
   const toggleTheme = () => {

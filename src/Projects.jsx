@@ -2,20 +2,20 @@ import React from "react";
 
 const projects = [
   {
-    image: "https://source.unsplash.com/random/400x200?code,app,1",
-    title: "Portfolio Website",
-    desc: "A modern, responsive developer portfolio built with React and Tailwind CSS. Features theme switching, animated sections, and smooth scrolling.",
-    tech: ["React", "Tailwind CSS", "Framer Motion"],
-    code: "https://github.com/yourusername/portfolio",
-    demo: "https://yourportfolio.com",
+    image: "https://source.unsplash.com/random/400x200?internship,students,job",
+    title: "Internship Finder (University Students)",
+    desc: "A platform to help university students find internships by browsing opportunities and filtering by role, location, and eligibility.",
+    tech: ["React", "CSS", "Node.js"],
+    code: "https://github.com/yourusername/internship-finder",
+    demo: "https://your-demo-link.com/internship-finder",
   },
   {
-    image: "https://source.unsplash.com/random/400x200?ai,python,2",
-    title: "AI Chatbot",
-    desc: "An intelligent chatbot powered by Python and OpenAI API. Supports context-aware conversations and integrates with Slack.",
-    tech: ["Python", "OpenAI", "Slack API"],
-    code: "https://github.com/yourusername/ai-chatbot",
-    demo: "https://yourchatbotdemo.com",
+    image: "https://source.unsplash.com/random/400x200?research,education,notes",
+    title: "FutureHive",
+    desc: "A research + mini-project assistant with AI integration that helps students discover project ideas and access past papers.",
+    tech: ["AI Integration", "Python", "React"],
+    code: "https://github.com/yourusername/futurehive",
+    demo: "https://your-demo-link.com/futurehive",
   },
 ];
 
