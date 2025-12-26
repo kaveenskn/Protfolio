@@ -27,7 +27,7 @@ const skills = [
     logo: <SiReact className="w-20 h-20 text-cyan-400 dark:text-cyan-300 opacity-70" />,
     icon: <FaReact className="w-8 h-8 text-blue-900 dark:text-cyan-400" />,
     title: 'Frontend & Backend',
-    desc: 'Skilled in React, Node.js, and modern web technologies.'
+    desc: 'Skilled in React, Node.js, Flask, Django, and modern web technologies.'
   },
   {
     logo: <SiSecurityscorecard className="w-20 h-20 text-blue-900 dark:text-cyan-400 opacity-70" />,
@@ -41,11 +41,13 @@ const Skillcards = () => {
   return (
     <section id="skills" className="w-full py-16 bg-white dark:bg-[#181e29] transition-colors">
       <h3 className="text-3xl sm:text-4xl font-bold mb-10 text-blue-900 dark:text-cyan-300 text-center w-full">Skills</h3>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-8 px-6">
         {skills.map((skill, idx) => (
           <div
             key={idx}
-            className="relative group rounded-2xl shadow-lg overflow-hidden border border-cyan-100 dark:border-[#23272f] bg-cyan-50 dark:bg-[#23272f] h-80 flex items-end justify-center hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+            className={`relative group rounded-2xl shadow-lg overflow-hidden border border-cyan-100 dark:border-[#23272f] bg-cyan-50 dark:bg-[#23272f] h-80 flex items-end justify-center hover:scale-105 hover:shadow-2xl transition-transform duration-300 md:col-span-2 ${
+              idx === 3 ? "md:col-start-2" : idx === 4 ? "md:col-start-4" : ""
+            }`}
             style={{ minHeight: '20rem' }}
           >
             {/* Card Logo */}

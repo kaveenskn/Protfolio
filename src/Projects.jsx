@@ -1,16 +1,19 @@
 import React from "react";
 
+import internQuestImg from "./images/InternQuest.png";
+import futureHiveImg from "./images/FutureHive.png";
+
 const projects = [
   {
-    image: "https://source.unsplash.com/random/400x200?internship,students,job",
-    title: "Internship Finder (University Students)",
+    image: internQuestImg,
+    title: "InternQuest",
     desc: "A platform to help university students find internships by browsing opportunities and filtering by role, location, and eligibility.",
     tech: ["React", "CSS", "Node.js"],
     code: "https://github.com/yourusername/internship-finder",
     demo: "https://your-demo-link.com/internship-finder",
   },
   {
-    image: "https://source.unsplash.com/random/400x200?research,education,notes",
+    image: futureHiveImg,
     title: "FutureHive",
     desc: "A research + mini-project assistant with AI integration that helps students discover project ideas and access past papers.",
     tech: ["AI Integration", "Python", "React"],
